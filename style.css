@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+body{
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(pink, black);
+}
+header{
+    width: 100%;
+    background-color: blue;
+
+}
+
+nav, span, a{
+    text-decoration: none;
+    color: wheat;
+    font-size: 1.3rem;
+    margin-right: 40px;
+    padding-top: 6px;
+}
+.imga{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-bottom: 9px;
+}
+.fa-school{
+    font-size: 30px;
+    color: ivory;
+}
+nav, span {
+    margin-left: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/*------- nain ---------- */
+
+main{
+    display: flex;
+    justify-content: center;
+}
+.container{
+    background-color: khaki;
+    width: 990px;
+    padding: 30px;
+}
+.titel{
+    font-size: 25px;
+    color: blue;
+    text-align: center;
+}
+.players{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.player{
+    width: 200px;
+    height: 200px;
+    box-shadow: 3px 3px 3px 3px;
+    background-color: #120E43;
+    color: white;
+    margin: 10px;
+    font-weight: 200;
+    padding-bottom: 5px;
+    text-align: center;
+    border-radius: 5px;
+}
+.player img{
+    margin-top: 10px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.player-name{
+    margin-bottom: 16px;
+}
+#abir{
+    font-size: 11px; 
+}
+small{
+    color: orange;
+}
+/* top styel -------- */
+
+.blogs{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 20px;
+}
+.blog{
+    display: flex;
+    margin: 0px 50px;
+    background-color: #010e0b38;
+    box-shadow: 3px 3px 5px 7px green;
+    border-radius: 10px;
+}
+.blog .thumbnail img{
+    width: 180px;
+    height: 180px;
+    border-radius: 5px;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+.blog-info{
+    margin-left: 16px;
+}
+.blog-author a{
+    font-size: 15px;
+    color: blue;
+}
+button{
+    margin: 20px;
+    padding: 6px;
+}
+
+/* =---------our ichool --------- */
+.containers{
+    display: flex;
+    justify-content: center;
+}
+.containerss{
+    margin-top: 20px;
+    background-color: khaki;
+    width: 990px;
+    padding: 30px;
+}
+.courses{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 24px;
+}
+
+.course .course-banner img{
+    width: 224px;
+    height: 104px;
+    border-radius: 10px;
+}
+.course{
+    width: 233px;
+    box-shadow: 0px 0px 4px 5px white,0px 0px 4px 5px white,0px 0px 4px 5px white;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+}
+.course-infu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.fa-star{
+    font-size: 12px;
+}
+.fa-star.filled{
+    color: #FFC014;
+}
+.fa-star.empty{
+    color: #AEAEAE;
+}
+.course-durataion{
+    background-color: #9f9f9fbe;
+    border-radius: 20px;
+    padding: 6px;
+    margin-right: 20px;
+}
+
+
+/* /* text next *-------/ */
+
+.login-contaner{
+    display: flex;
+    justify-content: center;
+    background-color: khaki;
+    width: 1050px;
+}
+.login-form{
+    display: flex;
+    flex-direction: column;
+    
+}
+.login-form input, button{
+    font-size: 1.3em;
+    
+    margin-top: 15px;
+    border: 1px solid lightgreen;
+    padding: 8px;
+    border-radius: 10px;
+}
+.login-form button{
+    background-color: orange;
+    font-weight: 700;
+    padding: 7px;
+}
+.div-3{
+    width: 100%;
+    margin-top: 15px;
+    border-radius: 10px;
+}
+.div-3 textarea{
+    width: 520px;
+    height: 120px;
+    font-size: 1.5em;
+    padding: 10px;
+    border: 1px solid lightgreen;
+    border-radius: 10px;
+
+}
+
+/*--------- mediya qres -------- */
+@media only screen and (max-width:688px){
+    header{
+        display: block;
+    }
+    .container{
+        width: 100%;
+    }
+    .players{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .blogs, .courses, .login-contaner{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .player, .blog, .course, .login-contaner{
+        flex-direction: column;
+    }
+}
